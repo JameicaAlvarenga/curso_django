@@ -29,7 +29,7 @@ DEBUG = config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
-AUTH_USER_MODEL='base.user'
+AUTH_USER_MODEL = 'base.user'
 
 # Application definition
 
@@ -146,16 +146,16 @@ if AWS_ACCESS_KEY_ID:
 
     AWS_DEFAULT_ACL = None
 
-# static assets
-# ---------------------------------------------------------
+    # static assets
+    # ---------------------------------------------------------
     STATICFILES_STORAGE = 's3_folder_storage.s3.StaticStorage'
     STATIC_S3_PATH = 'static'
     STATIC_ROOT = f'/{STATIC_S3_PATH}/'
     STATIC_URL = f'//s3.amazonaws.com/{AWS_STORAGE_BUCKET_NAME}/{STATIC_S3_PATH}/'
     ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
-# Upload Media Folder
-# ---------------------------------------------------------
+    # Upload Media Folder
+    # ---------------------------------------------------------
     DEFAULT_FILE_STORAGE = 's3_folder_storage.s3.DefaultStorage'
     DEFAULT_S3_PATH = 'media'
     MEDIA_ROOT = f'/{DEFAULT_S3_PATH}/'
