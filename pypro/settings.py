@@ -35,8 +35,8 @@ AUTH_USER_MODEL = 'base.user'
 
 INSTALLED_APPS = [
     'django.contrib.admin',
-    'django.contrib.auth',
     'django.contrib.contenttypes',
+    'django.contrib.auth',
     'django.contrib.sessions',
     'django.contrib.messages',
     'collectfast',
@@ -73,6 +73,15 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'pypro.wsgi.application'
+
+#Configuração debug - toolbar
+
+INTERNAL_IPS = config('INTERNAL_IPS', cast=Csv(), default='127.0.0.1')
+
+if DEBUG:
+    INSTALLED_APPS.append('debug_toolbar')
+    MIDDLEWARE.insert(0, 'debug_toolbar.middleware.DebugToolbarMiddleware')
+
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -144,7 +153,7 @@ if AWS_ACCESS_KEY_ID:
 
     COLLECTFAST_ENABLE = True
 
-    AWS_DEFAULT_ACL = None
+    AWS_DEFAULT_ACL = 'private'
 
     # static assets
     # ---------------------------------------------------------
