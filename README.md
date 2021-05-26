@@ -1,11 +1,10 @@
-# curso_django
-Aplicação disponivel em : https://pyprodjangojnbac.herokuapp.com/'
+# curso_django Aplicação disponivel em : https://pyprodjangojnbac.herokuapp.com/'
 
 Aplicação em desevolvimento  no modulo Django do curso PythonPro
-Utilizando conceitos de entrega continua utilizando: The Twelve-Factor App
+Utilizando conceitos de entrega continua do: The Twelve-Factor App
 em todo processo.
 
-[![Build Status](https://travis-ci.com/JameicaAlvarenga/new_django.svg?branch=main)](https://travis-ci.com/JameicaAlvarenga/new_django)
-[![Updates](https://pyup.io/repos/github/JameicaAlvarenga/new_django/shield.svg)](https://pyup.io/repos/github/JameicaAlvarenga/new_django/)
-[![Python 3](https://pyup.io/repos/github/JameicaAlvarenga/new_django/python-3-shield.svg)](https://pyup.io/repos/github/JameicaAlvarenga/new_django/)
-[![codecov](https://codecov.io/gh/JameicaAlvarenga/new_django/branch/main/graph/badge.svg)](https://codecov.io/gh/JameicaAlvarenga/new_django)
+[![Build Status](https://travis-ci.com/JameicaAlvarenga/curso_django.svg?branch=main)](https://travis-ci.com/JameicaAlvarenga/curso_django)
+[![Python 3](https://pyup.io/repos/github/JameicaAlvarenga/curso_django/python-3-shield.svg)](https://pyup.io/repos/github/JameicaAlvarenga/curso_django/)
+[![Python 3](https://pyup.io/repos/github/JameicaAlvarenga/curso_django/python-3-shield.svg)](https://pyup.io/repos/github/JameicaAlvarenga/curso_django/)
+[![codecov](https://codecov.io/gh/JameicaAlvarenga/curso_django/branch/main/graph/badge.svg)](https://codecov.io/gh/JameicaAlvarenga/curso_django)
