@@ -23,11 +23,13 @@
 
 
 <div class="container">
-	<div class="row">
-		<div class="col-md-12">
+    <div class="row">
+        <div class="col-md-12">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand" href="{% url 'base:home' %}">Python Pro</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -40,7 +42,8 @@
                             <a class="nav-link" href="#">Livros</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Dropdown
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -60,28 +63,48 @@
                     </form>
                 </div>
             </nav>
-			<div class="jumbotron">
-				<h2>
-					Curso de Python com Luciano Ramalho
-				</h2>
-				<p>
-				    Confira em breve mais informações sobre o curso que será ministrado pelo autor do livro
-                    <a href="https://www.oreilly.com/library/view/fluent-python/9781491946237/"
-                       target="_blank" > Python Fluente</a>
+            <div class="jumbotron">
+                <h2>
+                    Curso de Python com Luciano Ramalho
+                </h2>
+                <h3 class="mt-4">Entre na fila de espera</h3>
+                <form action="https://gmail.us6.list-manage.com/subscribe/post?u=82f6973075294a3c9515b89e5&amp;id=530a5c07d9"
+                      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                      class="form-row align-items-center" target="_blank" novalidate>
 
-                </p>
+                    <div class="form-row align-items-center">
+                        <div class="col-auto">
+                            <label class="sr-only" for="mce-EMAIL">Email</label>
+                            <input type="email" value="" name="EMAIL" class="form-required" id="mce-EMAIL"
+                                   placeholder="exempo@email.com">
+                        </div>
+                        <div class="col-auto">
+                            <label class="sr-only" for="mce-FNAME">Email</label>
+                            <input type="text" value="" name="FNAME" class="" id="mce-FNAME"
+                                   placeholder="Seu nome">
+                        </div>
+
+                        <div class="col-auto">
+                            <input type="submit" value="Salvar" name="subscribe" id="mc-embedded-subscribe"
+                                   class="btn btn-primary">
+                        </div>
+                    </div>
+                </form>
+
             </div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="card">
-						<h5 class="card-header">
-							Mais detalhes sobre o instrutor
-						</h5>
-						<div class="card-body">
-							<p class="card-text">
-								<img src="{% static 'img/ramalho.png' %}" alt="Foto de Luciano Ramalho"
-                                class="img-thumbnail float-left mr-3"/>
-                                Ramalho é sócio e professor na <a href="http://python.pro.br">Python.pro.br</a>.
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <h5 class="card-header">
+                            Mais detalhes sobre o instrutor
+                        </h5>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <img src="{% static 'img/ramalho.png' %}" alt="Foto de Luciano Ramalho"
+                                     class="img-thumbnail float-left mr-3"/>
+                                <a href="https://www.oreilly.com/library/view/fluent-python/9781491946237/">
+                                    Luciano Ramalho</a> é sócio e professor na <a href="http://python.pro.br">
+                                Python.pro.br</a>.
                                 Foi diretor técnico do <a href="http://pt.wikipedia.org/wiki/Brasil_Online"> Brasil
                                 Online</a>,
                                 primeiro portal da Abril S/A na Web. Liderou times para os portais IDG Now, BOL, UOL,
@@ -91,17 +114,17 @@
                                 Ajudou a criar a Associação Python Brasil e foi seu presidente.
                                 É membro da Python Software Foundation e um dos fundadores do
                                 <a href="https://garoa.net.br">Garoa Hacker Clube<a/>, o primeiro hackerspace do Brasil.
-                                Já palestrou várias vezes em eventos internacionais como FISL,
-                                <a href="http://www.oscon.com/oscon2013/public/schedule/detail/29389">O’Reilly Open
-                                    Source Convention</a>
+                                    Já palestrou várias vezes em eventos internacionais como FISL,
+                                    <a href="http://www.oscon.com/oscon2013/public/schedule/detail/29389">O’Reilly Open
+                                        Source Convention</a>
                                     e <a href="https://us.pycon.org/2013/speaker/profile/165/">PyCon US</a>.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <footer class="main-footer mt-5 pt-4 text-light">
     <div class="container">
@@ -117,13 +140,13 @@
         </div>
     </div>
     <div class="rights pb-4">
-      <div class="container">
-        <div class="row">
-            <div class="col">
-               {% now 'Y' %} Python Pro. Todos direitos reservados.
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    {% now 'Y' %} Python Pro. Todos direitos reservados.
+                </div>
             </div>
         </div>
-      </div>
     </div>
 </footer>
 
