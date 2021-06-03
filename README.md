@@ -1,6 +1,6 @@
 # curso_django 
 Aplicação em desevolvimento  no modulo Django do curso PythonPro. 
-Utilizando conceitos de entrega continua do: The Twelve-Factor App
+Utilizando conceitos de The Twelve-Factor App
 em todo processo.
 Aplicação disponivel em : https://pyprodjangojnbac.herokuapp.com/
 
