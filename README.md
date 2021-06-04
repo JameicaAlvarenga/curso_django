@@ -3,7 +3,7 @@ Aplicação em desevolvimento  no modulo Django do curso PythonPro.
 Utilizando conceitos entrega continua e The Twelve-Factor App
 em todo processo.
 
-Incluso cadastro de lista de espera usando Mailchimp
+Incluso cadastro de lista de espera usando Mailchimp.
 
 Aplicação disponivel em : https://pyprodjangojnbac.herokuapp.com/
 
