@@ -1,0 +1,28 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %} Python Pro Aperitivos{% endblock title%}
+{% block description %} Pagina com todos os videos gratuitos{% endblock description%}
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="center>
+                <div class="row">
+            <div class="card">
+                <h5 class="mt-4 mb-3">
+                    Lista de Videos Aperitivos</h5>
+                <ol>
+                    {% for video in videos %}
+                       <li><a href="{{ video.get_absolute_url }}">{{ video.titulo | default:"Faltando Título" }}</a></li>
+                    {% empty %}
+                        <li>Não foi encontrado nenhum video de aperitivo</li>
+                    {% endfor %}
+                </ol>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}
