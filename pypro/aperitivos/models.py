@@ -11,6 +11,5 @@ class Video(models.Model):
     def get_absolute_url(self):
         return reverse('aperitivos:video', args=(self.slug,))
 
-
     def __str__(self):
         return f'Video:{self.titulo}'
