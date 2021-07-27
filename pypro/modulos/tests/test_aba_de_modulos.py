@@ -6,7 +6,7 @@ from pypro.django_assertions import assert_contains
 from pypro.modulos.models import Modulo
 
 
-@pytest.fixture()
+@pytest.fixture
 def modulos(db):
     return mommy.make(Modulo, 2)
 
